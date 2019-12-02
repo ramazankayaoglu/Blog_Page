@@ -1,0 +1,9 @@
+<div class=" takipciler col-lg-offset-3 col-md-3 col-md-offset-3 col-lg-3 text-center">
+    <span><b>Takipçiler</b></span>
+    <button url="{% url 'following:followed_or_followers_list' 'followers' %}" follow_type="followers" username="{{user.username}}" class="follow_button btn-block btn btn-primary">{{takipciler}}
+    </button>
+</div>
+<div class="takip_edilenler col-lg-3 col-md-3 text-center">
+    <span><b>Takip Edilenler</b></span>
+    <button url="{% url 'following:followed_or_followers_list' 'followed' %}" follow_type="followed" username="{{user.username    }}" class="follow_button btn-block btn btn-success">{{takip_edilenler}}</button>
+</div>

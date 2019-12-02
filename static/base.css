@@ -1,0 +1,27 @@
+body{
+background: white url("img/fbfb.jpg",size:px);
+}
+
+
+.pull-center{
+float: none;
+margin:0 auto;
+
+}
+
+.user-profile-img{
+width:250px;
+}
+
+.user-profile{
+margin-top : 25px;
+}
+
+.glyphicon-star{
+  color:#CCCCCC;
+  font-size: 16px;
+}
+
+.glyphicon-star.active{
+  color:#FDB230;
+}

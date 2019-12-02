@@ -1,0 +1,12 @@
+{% if user_list.has_other_pages %}
+    {% if user_list.has_next %}
+        <div class="favorite_paginate_div row text-center">
+            <a id="favorite_paginate" href="{% url 'posts:post_list_favorite_user' post.slug    %}?page={{ user_list.next_page_number }}"
+               class="btn btn-link">Daha Fazla Göster</a>
+        </div>
+    {% else %}
+        <div class="text-center">
+            <span class="text-danger"><b>Liste Sonu</b></span>
+        </div>
+    {% endif %}
+{% endif %}
